@@ -8,7 +8,8 @@ img_name = input("Enter image name: ").strip()
 
 #https://learnopencv.com/pytorch-for-beginners-image-classification-using-pre-trained-models/
 #Load pre-trained model
-alexnet = models.alexnet(pretrained=True)
+#alexnet = models.alexnet(pretrained=True)
+alexnet = models.alexnet(weights='AlexNet_Weights.DEFAULT')
 #Specify image transformations
 transform = transforms.Compose([            #[1]
  transforms.Resize(256),                    #[2]
